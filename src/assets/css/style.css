@@ -169,3 +169,26 @@
     border-radius: 5px;
 }
 /* END LOGIN & REGISTER */
+/* NAVBAR HOME */
+.navbar .container-fluid img{
+    position: absolute;
+    left: 1.5%;
+    right: 0;
+    top:69.49%;
+    width: 70px;
+    height: 67.2px;
+}
+.navbar .container-fluid ul{
+    position: absolute;
+    width: 80px;
+    height: 25px;
+    left: 1049px;
+    top: 37.5px;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: right;
+}
+
+/* END NAVBAR */
