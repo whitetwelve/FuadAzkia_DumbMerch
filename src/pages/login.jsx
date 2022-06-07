@@ -1,7 +1,7 @@
 import Logo from '../assets/img/DumbMerch_Logo.png'
 import '../assets/css/style.css'
 
-export default function Register(){
+export default function Login(){
     return(
         <>
         <div className="container">
@@ -15,23 +15,20 @@ export default function Register(){
             <button type='submit' class="btn btn-danger">
               Login
             </button>
-            <a href="#Register">Register</a>
+            <a href="#Login">Register</a>
             </div>
         </div>
-    <div className="card">
-    <p className="card-title">Register</p>
+    <div className="card" id="card">
+    <p className="card-title">Login</p>
   <div className="card-body">
   <form>
   <div class="form-group">
-    <input type="text" class="form-control" placeholder="Name" id="forName"/>
+    <input type="text" class="form-control" placeholder="Email" id="forMail1"/>
   </div>
   <div class="form-group">
-    <input type="text" class="form-control" placeholder="Email" id="forMail"/>
+    <input type="password" class="form-control" placeholder="Password" id="forPassword1"/>
   </div>
-  <div class="form-group">
-    <input type="password" class="form-control" placeholder="Password" id="forPassword"/>
-  </div>
-  <button type="submit" class="btn btn-danger">Register</button>
+  <button type="submit" class="btn btn-danger" id='login-btn'>Login</button>
 </form>
   </div>
     </div>
