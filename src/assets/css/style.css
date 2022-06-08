@@ -5,6 +5,7 @@
 *{
     font-family: 'Avenir';
 }
+/* LOGIN & REGISTER */
 .container .card {
     position: absolute;
     width: 416px;
@@ -14,125 +15,200 @@
     background: #181818;
     border-radius: 10px;
 }
+#card{
+    position: absolute;
+    width: 416px;
+    height: 366px;
+    left: 851px;
+    top: 90px;
+    background: #181818;
+    border-radius: 10px;
+}
 
 .container .card p{
     position: absolute;
-width: 143px;
-height: 49px;
-left: 33px;
-top: 41px;
-
-font-weight: 900;
-font-size: 36px;
-line-height: 49px;
-
-color: #FFFFFF;
+    width: 143px;
+    height: 49px;
+    left: 33px;
+    top: 41px;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 49px;
+    color: #FFFFFF;
 }
 
 #forName{
     box-sizing: border-box;
-
-position: absolute;
-width: 350px;
-height: 50px;
-left: 33px;
-top: 119px;
-
-background: rgba(210, 210, 210, 0.25);
-border: 2px solid #BCBCBC;
-border-radius: 5px;
+    position: absolute;
+    width: 350px;
+    height: 50px;
+    left: 33px;
+    top: 119px;
+    background: rgba(210, 210, 210, 0.25);
+    border: 2px solid #BCBCBC;
+    border-radius: 5px;
 }
 
 #forMail{
     box-sizing: border-box;
+    position: absolute;
+    width: 350px;
+    height: 50px;
+    left: 33px;
+    top: 189px;
+    background: rgba(210, 210, 210, 0.25);
+    border: 2px solid #BCBCBC;
+    border-radius: 5px
 
-position: absolute;
-width: 350px;
-height: 50px;
-left: 33px;
-top: 189px;
-
-background: rgba(210, 210, 210, 0.25);
-border: 2px solid #BCBCBC;
-border-radius: 5px
+}#forMail1{
+    box-sizing: border-box;
+    position: absolute;
+    width: 350px;
+    height: 50px;
+    left: 33px;
+    top: 120px;
+    background: rgba(210, 210, 210, 0.25);
+    border: 2px solid #BCBCBC;
+    border-radius: 5px
 }
 
 #forPassword{
     box-sizing: border-box;
-
-position: absolute;
-width: 350px;
-height: 50px;
-left: 33px;
-top: 259px;
-
-background: rgba(210, 210, 210, 0.25);
-border: 2px solid #BCBCBC;
-border-radius: 5px;
+    position: absolute;
+    width: 350px;
+    height: 50px;
+    left: 33px;
+    top: 259px;
+    background: rgba(210, 210, 210, 0.25);
+    border: 2px solid #BCBCBC;
+    border-radius: 5px;
+}
+#forPassword1{
+    box-sizing: border-box;
+    position: absolute;
+    width: 350px;
+    height: 50px;
+    left: 33px;
+    top: 190px;
+    background: rgba(210, 210, 210, 0.25);
+    border: 2px solid #BCBCBC;
+    border-radius: 5px;
 }
 
 .card form button{
     position: absolute;
-width: 350px;
-height: 50px;
-left: 33px;
-top: 363px;
-
-background: #F74D4D;
-border-radius: 5px;
+    width: 350px;
+    height: 50px;
+    left: 33px;
+    top: 363px;
+    background: #F74D4D;
+    border-radius: 5px;
 }
 
 .container .left-side img{
     position: absolute;
-left: 7%;
-right: 0%;
-top: 10%;
-bottom: 1.27%;
-width: 264px;
-height: 254px;
+    left: 7%;
+    right: 0%;
+    top: 10%;
+    bottom: 1.27%;
+    width: 264px;
+    height: 254px;
 }
 
 .left-side .forText h5{
-position: absolute;
-height: 76px;
-left: 100px;
-top: 350px;
-font-size: 56px;
-font-style: normal;
-line-height: 76px;
-color: #FFFFFF;
-text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    position: absolute;
+    height: 76px;
+    left: 100px;
+    top: 350px;
+    font-size: 56px;
+    font-style: normal;
+    line-height: 76px;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .container .left-side .forText p{
-position: absolute;
-font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-left: 105px;
-top: 440px;
-font-weight: 400;
-font-size: 18px;
-line-height: 25px;
-color: #6A6A6A;
+    position: absolute;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    left: 105px;
+    top: 440px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #6A6A6A;
 }
 .container .left-side button{
-position: absolute;
-width: 135px;
-height: 40px;
-left: 104px;
-top: 560px;
-
-background: #F74D4D;
-border-radius: 5px;
+    position: absolute;
+    width: 135px;
+    height: 40px;
+    left: 104px;
+    top: 560px;
+    background: #F74D4D;
+    border-radius: 5px;
 }
 .container .left-side a {
-position: absolute;
-width: 71px;
-height: 25px;
-left: 291px;
-top: 567px;
-font-style: normal;
-font-size: 18px;
-line-height: 25px;
-color: #B7B7B7;
-text-decoration: none;
+    position: absolute;
+    width: 71px;
+    height: 25px;
+    left: 291px;
+    top: 567px;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 25px;
+    color: #B7B7B7;
+    text-decoration: none;
 }
+
+#login-btn{
+    position: absolute;
+    width: 350px;
+    height: 50px;
+    left: 33px;
+    top: 287px;
+    background: #F74D4D;
+    border-radius: 5px;
+}
+/* END LOGIN & REGISTER */
+/* NAVBAR HOME */
+.navbar .container-fluid img{
+    position: absolute;
+    left: 1.5%;
+    right: 0;
+    top:69.49%;
+    width: 70px;
+    height: 67.2px;
+}
+.navbar .container-fluid ul{
+    position: absolute;
+    width: 80px;
+    height: 25px;
+    left: 1049px;
+    top: 37.5px;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: right;
+}
+/* END NAVBAR */
+
+/* DETAILPAGE START */
+.container-fluid .row .col img{
+    margin: 95px 0px 95px 85px;
+}
+.container-fluid .row .col-6{
+    margin:92px 110px 75px 0px ;
+}
+.container-fluid .row .col-6 .content-bottom{
+    text-align: justify;
+    color:  #FFFFFF;
+    font-size: 18px;
+    line-height: 25px;;
+}
+.row .col-6 .content-bottom button{
+    display: block;
+    width: 654px;
+    height: 40px;
+    border-radius: 5px;
+}
+/* DETAILPAGE ENDS */
