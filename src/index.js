@@ -7,6 +7,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import  Home  from './pages/home';
 import Profile from './pages/profile';
 import DetailPage from './pages/detailPage';
+import ListCategory from './pages/listCategory';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -18,6 +19,7 @@ root.render(
         <Route exact path='/detail-page' element={<DetailPage/>}/>
         <Route exact path='/login' element={<Login/>}/>
         <Route exact path='/register' element={<Register/>}/>
+        <Route exact path='/category' element={<ListCategory/>}/>
       </Routes>
     </Router>
   </React.StrictMode>

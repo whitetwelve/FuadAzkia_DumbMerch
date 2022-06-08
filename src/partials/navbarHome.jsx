@@ -3,8 +3,6 @@ import {NavLink} from 'react-router-dom'
 import "../assets/css/style.css"
 export default function NavbarHome(){
     return(
-
-    
      <nav className="navbar">
          <div className="container-fluid">
         <img src={logo} alt='logo-DumbMerch'/>

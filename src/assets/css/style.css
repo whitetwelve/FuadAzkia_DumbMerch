@@ -2,6 +2,10 @@
     font-family: 'Avenir';
     src: url("/src/assets/avenir_ff/AvenirLTStd-Black.otf")
   }
+  @font-face {
+    font-family: 'Roboto';
+    src: url("/src/assets/Roboto_fonts/Roboto-Thin.ttf")
+  }
 *{
     font-family: 'Avenir';
 }
@@ -308,3 +312,9 @@
     line-height: 14px;
 }
 /* END PROFILE */
+/* CATEGORY */
+.body-table .row-table td{
+    font-family: 'Roboto';
+    font-size: 18px;
+}
+/* END CATEGORY */
