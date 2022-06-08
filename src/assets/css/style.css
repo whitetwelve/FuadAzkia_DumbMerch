@@ -182,7 +182,7 @@
     position: absolute;
     width: 80px;
     height: 25px;
-    left: 1049px;
+    left: 1023px;
     top: 37.5px;
     font-style: normal;
     font-weight: 900;
@@ -190,25 +190,121 @@
     line-height: 25px;
     text-align: right;
 }
+
+.navbar .container-fluid ul .me-4:hover{
+    color:#555
+}
 /* END NAVBAR */
 
 /* DETAILPAGE START */
 .container-fluid .row .col img{
-    margin: 95px 0px 95px 85px;
+    margin: 107px 0px 95px 125px;
+    height: 555px;
+    width: 436px;
 }
 .container-fluid .row .col-6{
-    margin:92px 110px 75px 0px ;
+    margin:92px 76px 75px 0px ;
 }
 .container-fluid .row .col-6 .content-bottom{
     text-align: justify;
     color:  #FFFFFF;
     font-size: 18px;
     line-height: 25px;;
+    margin-top: 1.9rem;
 }
 .row .col-6 .content-bottom button{
     display: block;
-    width: 654px;
+    width: 617px;
     height: 40px;
     border-radius: 5px;
 }
 /* DETAILPAGE ENDS */
+
+/* PROFILE */
+.row .col img{
+    height:435px ;
+    width:338px ;
+    position: absolute;
+    left: 3.5rem;
+}
+.container .row .col {
+    margin: 3.7rem 0rem;
+}
+.container .row .d-block{
+    margin-right: 14rem;
+}
+#profile-left{
+    margin-top: 8.2rem;
+    margin-left: 0.8rem;
+}
+#cardProfil{
+    position: absolute;
+    width: 524px;
+    height: 145px;
+    left: 752px;
+    top: 158px;
+    background: #303030;
+}
+#mytrans{
+    position: absolute;
+    width: 172px;
+    height: 33px;
+    left: 751px;
+    top: 100px;
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 33px;
+    color: #F74D4D;
+}
+.card .card-body .col p{
+    font-size: 20px;
+    margin-left: 10rem;
+}
+#mouse-text{
+    position: absolute;
+    height: 19px;
+    left: -40px;
+    top: 0px;
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    color: #F74D4D;
+}
+.card .card-body .col .fw-bold{
+    position: absolute;
+    width: 120px;
+    height: 12px;
+    left: -39px;
+    top: 48px;
+    font-size:12px;
+    line-height: 12px;
+    display: flex;
+    align-items: center;
+    color: #F74D4D;
+}
+#price{
+    position: absolute;
+    height: 14px;
+    left: -10rem;
+    top: 9px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+}
+#subtotal{
+    position: absolute;
+    width: 910px;
+    height: 14px;
+    left: -2.4rem;
+    top: 7rem;
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 10px;
+    line-height: 14px;
+}
+/* END PROFILE */

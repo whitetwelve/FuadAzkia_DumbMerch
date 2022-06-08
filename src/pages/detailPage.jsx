@@ -26,12 +26,12 @@ export default function DetailPage(){
                 - Baterai tahan hingga 12 bulan
                 </p>
                 <div className="content-bottom">
-                <p>
+                <p style={{width:'38rem'}}>
                 Mouse Wireless Alytech AL - Y5D, hadir dengan desain 3 tombol mouse yang ringan dan mudah dibawa. Mouse ini menggunakan frekuensi radio 2.4GHz (bekerja hingga jarak 10m) dan fitur sensor canggih optik pelacakan dengan penerima USB yang kecil. Mouse ini didukung oleh 1x baterai AA (hingga 12 bulan hidup baterai). mendukung sistem operasi Windows 7,8, 10 keatas, Mac OS X 10.8 atau yang lebih baru dan sistem operasi Chrome OS. 
                 
                 <p className="my-5" style={{fontSize:'24px',
                 color:'#F74D4D',display:'flex',
-                marginLeft:'32.5rem'}}>Rp.300.900</p>
+                marginLeft:'30.2rem'}}>Rp.300.900</p>
                 </p>
                 <button type="submit" class="btn btn-danger">Buy</button>
                 </div>

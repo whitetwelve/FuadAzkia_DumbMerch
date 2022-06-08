@@ -1,21 +1,24 @@
 import logo from '../assets/img/DumbMerch_Logo.png'
-
+import {NavLink} from 'react-router-dom'
+import "../assets/css/style.css"
 export default function NavbarHome(){
     return(
+
+    
      <nav className="navbar">
          <div className="container-fluid">
         <img src={logo} alt='logo-DumbMerch'/>
         <div className="nav-item d-block">
         <ul>
-            <a href="#userShop"className='me-4' style={{textDecoration :'none', color:'white'}}>
+            <NavLink to='/complain' className="me-4" style={{textDecoration:'none',color :'white'}} activeClassName="navbar__link--active">
                 Complain
-            </a>
-            <a href="profil"className='me-4' style={{textDecoration :'none', color:'white'}}>
+            </NavLink>
+            <NavLink to="/profile" className='me-4' style={{textDecoration :'none', color:'white'}}>
                 Profile
-            </a>
-            <a href='login' style={{textDecoration :'none', color:'white'}}>
+            </NavLink>
+            <NavLink to='/login'className='me-4' style={{textDecoration :'none', color:'white'}}>
                 Logout
-            </a>
+            </NavLink>
         </ul>
         </div>
          </div>
