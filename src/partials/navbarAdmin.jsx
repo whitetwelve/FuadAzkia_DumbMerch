@@ -14,7 +14,7 @@ export default function NavbarAdmin(){
             <NavLink to="/category" className='me-4' style={{textDecoration :'none', color:'white'}}>
                 Category
             </NavLink>
-            <NavLink to='/product'className='me-4' style={{textDecoration :'none', color:'white'}}>
+            <NavLink to='/products'className='me-4' style={{textDecoration :'none', color:'white'}}>
                 Product
             </NavLink>
             <NavLink to='/login'className='me-4' style={{textDecoration :'none', color:'white',}}>
