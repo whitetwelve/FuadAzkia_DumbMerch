@@ -1,7 +1,7 @@
 import {Table, Button,Modal,ModalBody} from 'react-bootstrap'
-import NavbarAdmin from '../partials/navbarAdmin';
-import {Link} from 'react-router-dom'
-import { useState } from 'react';
+import NavbarAdmin from '../partials/NavbarAdmin';
+import {Link, useNavigate} from 'react-router-dom'
+import { useState,} from 'react';
 
 export default function ListCategory(){
 
@@ -9,6 +9,12 @@ export default function ListCategory(){
 
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
+
+    const navigate = useNavigate()
+
+    function handleNavigate () {
+      navigate('/edit-category')
+    }
     return(
         <>
         <NavbarAdmin></NavbarAdmin>
@@ -30,7 +36,7 @@ export default function ListCategory(){
       <td>1</td>
       <td>Mouse</td>
       <td>
-      <Button variant="success" style={{width:'8rem',height:'5.7vh',marginLeft:'18rem',fontFamily:'Avenir'}}><Link style={{textDecoration:'none', color:'white'}} to='/edit-category'>Edit</Link></Button>
+      <Button variant="success" onClick={handleNavigate} style={{width:'8rem',height:'5.7vh',marginLeft:'18rem',fontFamily:'Avenir'}}>Edit</Button>
       <Button variant="danger" className='ms-3' data-toggle="modal" data-target="#exampleModal" style={{width:'8rem',height:'5.7vh',fontFamily:'Avenir'}} onClick={handleShow}>Delete</Button>
       
       <Modal show={show} onHide={handleClose}>
@@ -66,32 +72,32 @@ export default function ListCategory(){
     <tr className='row-table'>
       <td>2</td>
       <td>Keyboard</td>
-      <td><Button variant="success" style={{width:'8rem',height:'5.7vh',marginLeft:'18rem',fontFamily:'Avenir'}}><Link style={{textDecoration:'none', color:'white'}} to='/edit-category'>Edit</Link></Button>
+      <td><Button variant="success" onClick={handleNavigate} style={{width:'8rem',height:'5.7vh',marginLeft:'18rem',fontFamily:'Avenir'}}>Edit</Button>
       <Button variant="danger" className='ms-3' style={{width:'8rem',height:'5.7vh',fontFamily:'Avenir'}} onClick={handleShow}>Delete</Button></td>
     </tr>
     <tr className='row-table'>
       <td colSpan={1}>3</td>
       <td colSpan={1}>Bag</td>
-      <td colSpan={1}><Button variant="success" style={{width:'8rem',height:'5.7vh',marginLeft:'18rem',fontFamily:'Avenir'}}><Link style={{textDecoration:'none', color:'white'}} to='/edit-category'>Edit</Link></Button>
+      <td colSpan={1}><Button variant="success" onClick={handleNavigate} style={{width:'8rem',height:'5.7vh',marginLeft:'18rem',fontFamily:'Avenir'}}>Edit</Button>
       <Button variant="danger" className='ms-3' style={{width:'8rem',height:'5.7vh',fontFamily:'Avenir'}} onClick={handleShow}>Delete</Button></td>
     </tr>
     <tr className='row-table'>
       <td colSpan={1}>4</td>
       <td colSpan={1}>Stationary</td>
-      <td colSpan={1}><Button variant="success" style={{width:'8rem',height:'5.7vh',marginLeft:'18rem',fontFamily:'Avenir'}}><Link style={{textDecoration:'none', color:'white'}} to='/edit-category'>Edit</Link></Button>
+      <td colSpan={1}><Button variant="success" onClick={handleNavigate} style={{width:'8rem',height:'5.7vh',marginLeft:'18rem',fontFamily:'Avenir'}}>Edit</Button>
       <Button variant="danger" className='ms-3' style={{width:'8rem',height:'5.7vh',fontFamily:'Avenir'}} onClick={handleShow}>Delete</Button>
       </td>
     </tr>
     <tr className='row-table'>
       <td colSpan={1}>5</td>
       <td colSpan={1}>Doll</td>
-      <td colSpan={1}><Button variant="success" style={{width:'8rem',height:'5.7vh',marginLeft:'18rem',fontFamily:'Avenir'}}><Link style={{textDecoration:'none', color:'white'}} to='/edit-category'>Edit</Link></Button>
+      <td colSpan={1}><Button variant="success" onClick={handleNavigate} style={{width:'8rem',height:'5.7vh',marginLeft:'18rem',fontFamily:'Avenir'}}>Edit</Button>
       <Button variant="danger" className='ms-3' style={{width:'8rem',height:'5.7vh',fontFamily:'Avenir'}} onClick={handleShow}>Delete</Button></td>
     </tr>
     <tr className='row-table'>
       <td colSpan={1}>6</td>
       <td colSpan={1}>Pillow</td>
-      <td colSpan={1}><Button variant="success" style={{width:'8rem',height:'5.7vh',marginLeft:'18rem',fontFamily:'Avenir'}}><Link style={{textDecoration:'none', color:'white'}} to='/edit-category'>Edit</Link></Button>
+      <td colSpan={1}><Button variant="success" onClick={handleNavigate} style={{width:'8rem',height:'5.7vh',marginLeft:'18rem',fontFamily:'Avenir'}}>Edit</Button>
       <Button variant="danger" className='ms-3' style={{width:'8rem',height:'5.7vh',fontFamily:'Avenir'}} onClick={handleShow}>Delete</Button></td>
     </tr>
   </tbody>

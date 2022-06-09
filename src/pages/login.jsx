@@ -1,4 +1,5 @@
 import Logo from '../assets/img/DumbMerch_Logo.png'
+import {Link} from 'react-router-dom'
 import '../assets/css/style.css'
 
 export default function Login(){
@@ -16,7 +17,7 @@ export default function Login(){
               <button type='submit' class="btn btn-danger">
               Login
               </button>
-              <a href="#Register">Register</a>
+              <Link to='/register'>Register</Link>
             </div>
         </div>
     <div className="card" id="card">

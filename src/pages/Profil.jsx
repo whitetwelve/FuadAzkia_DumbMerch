@@ -1,9 +1,13 @@
-import NavbarHome from "../partials/navbarHome"
+import NavbarHome from "../partials/NavabarUser"
 import SiBule from '../assets/img/Profil.png'
 import Mouse from '../assets/img/Mouse.png'
 import LogoDumbMerch from '../assets/img/DumbMerch_Logo.png'
-
+import { useParams } from "react-router-dom"
 const Profile = () =>{
+
+    const params = useParams()
+
+    console.log(params.id);
     return(
         <>
         <NavbarHome/>

@@ -1,4 +1,4 @@
-import NavbarAdmin from "../partials/navbarAdmin";
+import NavbarAdmin from "../partials/NavbarAdmin";
 import {Form, Button} from 'react-bootstrap'
 const EditCategory = () =>{
     return(

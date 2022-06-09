@@ -1,4 +1,4 @@
-import NavbarAdmin from "../partials/navbarAdmin";
+import NavbarAdmin from "../partials/NavbarAdmin";
 
 const EditProduct = () => {
     return (

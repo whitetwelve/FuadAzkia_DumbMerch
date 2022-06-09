@@ -1,5 +1,5 @@
 import Mouse from '../assets/img/Mouse.png'
-import NavbarHome from '../partials/navbarHome'
+import NavbarHome from '../partials/NavabarUser'
 
 export default function DetailPage(){
     return(
