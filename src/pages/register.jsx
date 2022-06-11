@@ -1,39 +1,73 @@
 import Logo from '../assets/img/DumbMerch_Logo.png'
 import '../assets/css/style.css'
+import { Form,Button } from 'react-bootstrap'
+import { useState } from 'react'
+import { useNavigate,Link } from 'react-router-dom'
+
 
 export default function Register(){
+
+  const navigate = useNavigate()
+
+  const forNavigate = ()=>{
+    navigate('/login')
+  }
+
+  const [state,setState] = useState({
+    fullname : '',
+    email : '',
+    password : ''
+  })
+
+  const forChangeInput = (e) =>{
+    setState({
+      ...state,
+      [e.target.name] : e.target.value
+    })
+  }
+
+  const forSubmitInput = (e) =>{
+    e.preventDefault()
+    console.log(state);
+  }
     return(
-        <>
+  <>
     <div className="container">
       <div className="left-side">
         <img src={Logo} alt="logo-DumbMerch" />
-            <div className="forText">
-                <h5>Easy, Fast, and Reliable</h5>
-                <p>Go shopping for merchandise, just go to dumb merch <br/>shopping. 
-                the biggest merchandise in <b>Indonesia</b></p>
+
+          <div className="forText">
+            <h5>Easy, Fast, and Reliable</h5>
+              <p>Go shopping for merchandise, just go to dumb merch <br/>shopping. the biggest merchandise in <b>Indonesia</b></p>
+          </div>
+
+          <div className="inline">
+            <Link to={'/login'}  id="btn-register">
+              <p style={{marginTop:'6px',color:'white'}}>Login</p>
+            </Link>
+              <a href="#">Register</a>
             </div>
-            <div className="inline">
-              <button type='submit' class="btn btn-danger">
-              Login
-              </button>
-              <a href="#Register">Register</a>
-            </div>
         </div>
-    <div className="card">
-      <p className="card-title">Register</p>
-        <div className="card-body">
-            <form>
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Name" id="forName"/>
-        </div>
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Email" id="forMail"/>
-        </div>
-        <div class="form-group">
-          <input type="password" class="form-control" placeholder="Password" id="forPassword"/>
-        </div>
-      <button type="submit" class="btn btn-danger">Register</button>
-            </form>
+
+          <div className="card">
+            <p className="card-title">Register</p>
+
+              <div className="card-body">
+                <Form onSubmit={forSubmitInput}>
+                  <div className="form-group">
+                    <input type="text" className="form-control" placeholder="Name" name='fullname' autocomplete="off" onChange={forChangeInput} value={state.fullname} id="forName"/>
+                  </div>
+
+                  <div className="form-group">
+                    <input type="text" className="form-control" placeholder="Email" name="email" autocomplete="off" onChange={forChangeInput} value={state.email} id="forMail"/>
+                  </div>
+
+                  <div className="form-group">
+                    <input type="password" className="form-control" placeholder="Password" name="password" onChange={forChangeInput} value={state.password} id="forPassword"/>
+                  </div>
+
+                <Button type="submit" className="btn btn-danger">Register</Button>
+            </Form>
         </div>
     </div>
 </div>

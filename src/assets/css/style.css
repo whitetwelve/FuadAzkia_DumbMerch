@@ -1,11 +1,15 @@
 @font-face {
     font-family: 'Avenir';
     src: url("/src/assets/avenir_ff/AvenirLTStd-Black.otf")
-  }
-  @font-face {
+}
+@font-face {
     font-family: 'Roboto';
     src: url("/src/assets/Roboto_fonts/Roboto-Thin.ttf")
-  }
+}
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url("/src/assets/bebasNeue_font/BebasNeue-Regular.ttf")
+}
 *{
     font-family: 'Avenir';
 }
@@ -150,6 +154,17 @@
     background: #F74D4D;
     border-radius: 5px;
 }
+
+#btn-register{
+    position: absolute;
+    width: 135px;
+    height: 40px;
+    left: 104px;
+    top: 560px;
+    background: #F74D4D;
+    border-radius: 5px;
+    text-align: center;
+}
 .container .left-side a {
     position: absolute;
     width: 71px;
@@ -173,7 +188,7 @@
     border-radius: 5px;
 }
 /* END LOGIN & REGISTER */
-/* NAVBAR HOME */
+/* NAVBAR USER */
 .navbar .container-fluid img{
     position: absolute;
     left: 1.5%;
@@ -184,9 +199,8 @@
 }
 .navbar .container-fluid ul{
     position: absolute;
-    width: 80px;
     height: 25px;
-    left: 1023px;
+    left: 58rem;
     top: 37.5px;
     font-style: normal;
     font-weight: 900;
@@ -202,14 +216,14 @@
 
 /* DETAILPAGE START */
 .container-fluid .row .col img{
-    margin: 107px 0px 95px 125px;
+    margin: 107px 0px 95px 94px;
     height: 555px;
     width: 436px;
 }
 .container-fluid .row .col-6{
     margin:92px 76px 75px 0px ;
 }
-.container-fluid .row .col-6 .content-bottom{
+.container-fluid .row .col-6 .content-body{
     text-align: justify;
     color:  #FFFFFF;
     font-size: 18px;
@@ -318,3 +332,57 @@
     font-size: 18px;
 }
 /* END CATEGORY */
+/* ABOUT US */
+#au1{
+    font-family: 'Bebas Neue';
+    color: #F74D4D;
+    font-size: 75px;
+}
+#au2{
+    color: white;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    width: 28rem;
+    margin-left: 18rem;
+}
+#au3{
+    color:white;
+    text-align: justify;
+    font-family: 'Roboto';
+    font-style: italic;
+    width: 25rem;
+    font-size:22px
+}
+#au4{
+    position: absolute;
+    top: 56rem;
+    height:23rem
+}
+#au4 img{
+    width: 18rem;
+    position: absolute;
+    height: 16rem;
+    right:-1.4px
+}
+#au4 .card-body h5{
+    position: absolute;
+    font-family: 'Bebas Neue';
+    color: #F74D4D;
+    top: 17rem;
+    font-size: 42px;
+    left: 4rem;
+}
+#au4 .card-body p{
+    font-size: 12px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    left: 0.5rem;
+    width: 17rem;
+    margin-top: 17rem;
+    position: absolute;
+}
+#au5{
+    margin-top: -2rem;
+}
+/* END ABOUT US */
+/* COMPLAIN PAGE */
+
+/* END COMPLAIN PAGE */
