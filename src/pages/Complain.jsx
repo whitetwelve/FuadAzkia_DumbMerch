@@ -6,83 +6,59 @@ export default function Complain(){
     <>
         <NavbarAdmin></NavbarAdmin>
 
-        <div className="content-profile mt-5 mb-5 ms-auto me-auto text-white" id="complain">
-            
-            <div className="d-flex" style={{ height: '80vh' }}>
-                <div id='contact' className="d-flex flex-column" style={{ width: '35%' }}>
+        <div className="mt-5 mb-5 ms-auto me-auto text-white" id="complain-user">
+            <div className="d-flex" style={{ height: '75vh' }}>
+                <div id='contact' className="d-flex flex-column">
 
                     {/* LEFT SIDE CUSTOMER */}
                     <div className="d-flex mb-3">
-                        <img src={siBule} alt="profileImage" className="profile-message-side img-fluid rounded-pill" />
-                            <div className="d-flex flex-column contact-name-side mt-3 ms-3">
-                                <h1>Bule Kece</h1>
+                        <img id="com1" src={siBule} alt="sibule" className="img-fluid rounded-pill" />
+                            <div className="d-flex flex-column mt-3 ms-3">
+                                <h2>Bule Kece</h2>
                                 <p>Hello Admin, I Need Your Help</p>
                             </div>
                     </div>
 
-                    <div className="d-flex mb-4">
-                        <img src="https://4.bp.blogspot.com/-422B1rj4WCM/WAYkMwxaPjI/AAAAAAAAXk8/Gfy_BhKMjsIHfkbGJlnizdzq9nc9Kp7YwCLcB/s1600/boss%2Bbaby.JPG" alt="profileImage" className="profile-message-side img-fluid" />
-                        <div className="d-flex flex-column contact-name-side mt-3 ms-3">
-                            <h1>Bussines Man</h1>
+                    <div className="d-flex mb-3">
+                        <img id ="com2" src="https://source.unsplash.com/1280x960?girl" alt="goodGirl" className="img-fluid rounded-pill" />
+                        <div className="d-flex flex-column mt-3 ms-3">
+                            <h2>Pretty Girl</h2>
                             <p>Hello Admi, This Problem Product to Me</p>
                         </div>
                     </div>
-                    {/* LEFT SIDE CUSTOMER END */}
-                    
-                </div>
-                <div className="d-flex flex-column justify-content-end" style={{ width: '65%' }}>
+                    {/* LEFT SIDE CUSTOMER END */}      
 
-                    {/* ANOTHER CHAT USER <START>*/}
-                    {/* <div className="my-2 p-2 position-relative col-md-9 rounded-2 d-flex">
-                        <img src={siBule}
-                            alt="profileImage" className="profile-message img-fluid" />
-                        <div className="speech position-absolute"></div>
-                        <p className="text-white fw-lighter m-auto ms-4 p-2 px-3 d-inline-block rounded-2" style={{ backgroundColor: 'rgb(87,87,87)' }}>
-                            Hello Admin, I Need Your Help
-                        </p>
-                    </div> */}
-                    {/* ANOTHER CHAT USER <END>*/}
+                    <div id="ver1">
+                    </div>
 
-                    {/* <form>
-                        <div className="mt-4 mb-5">
-                            <div className="mb-4">
-                                <input className="form-control message-input ps-4" type="text" placeholder="Send Message"/>
-                            </div>
-                        </div>
-                    </form> */}
                 </div>
+                <hr/>
+            <div className="for-user">
+                <img src={siBule} className="rounded-pill" alt="SiBule" style={{width:'4rem',
+                    height:'9.5vh',
+                        position:'absolute',
+                            top:'56vh',
+                                left:'31rem'}}/>
+
+                <div className="chat-user">
+                    <div className="hi">Hello Admin, I Need Your Help</div>
+                </div>
+                <div className="triangle-left"></div>
             </div>
 
-            <div className="d-flex" style={{ height: '80vh' }}>
-                <div id='contact' className="d-flex flex-column" style={{ width: '35%' }}>
-
-                    {/* CONTACT NAME SIDE <start>*/}
-                    {/* <div className="d-flex">
-                        <img src={siBule} alt="profileImage" className="profile-message-side img-fluid" />
-                        <div className="d-flex flex-column contact-name-side mt-3 ms-3">
-                            <h1>Admin</h1>
-                            <p>Yes, Is there anything I can help</p>
+                <form id="com5">
+                    <div className="row mt-4 mb-5">
+                        <div className="col mb-4">
+                            <input className="form-control" type="text" placeholder="Send Message"/>
                         </div>
-                    </div> */}
-                    {/* CONTACT NAME SIDE <end>*/}
-                    
-                </div>
-                <div className="d-flex flex-column justify-content-end" style={{ width: '65%' }}>
 
-
-                    {/* CHAT USER <START>*/}
-                    {/* <div className="my-2 p-2 position-relative align-self-end col-md-9 rounded-2 d-flex">
-                        <div className="speech2 position-absolute"></div>
-                        <p className="text-white m-auto me-4 p-2 px-3 d-inline-block rounded-2" style={{ backgroundColor: '#262626' }}>
-                            Hello Admin, I need your help
-                        </p>
-                    </div> */}
-                    {/* CHAT USER <END>*/}
-
-                </div>
+                        <div className="col mb-4">
+                            <button className="btn btn-danger rounded-pill" type="submit">Send
+                            </button>
+                        </div>
+                    </div>
+                </form>
             </div>
-            
-
         </div>
     </>
     )
