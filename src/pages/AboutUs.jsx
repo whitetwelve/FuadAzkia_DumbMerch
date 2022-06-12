@@ -1,4 +1,4 @@
-import NavbarUser from '../partials/NavabarUser'
+import NavbarUser from '../partials/NavbarUser'
 import CewekKece from '../assets/img/about-us.avif'
 import CEO from '../assets/img/tom.webp'
 import { useNavigate } from 'react-router-dom'

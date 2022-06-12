@@ -188,7 +188,7 @@
     border-radius: 5px;
 }
 /* END LOGIN & REGISTER */
-/* NAVBAR USER */
+/* NAVBAR USER & ADMIN*/
 .navbar .container-fluid img{
     position: absolute;
     left: 1.5%;
@@ -440,3 +440,16 @@
     margin-top: 12px;
 }
 /* END COMPLAIN PAGE */
+/* HOME PAGE */
+#card-home{
+    margin-left: 3rem;
+    display: block;
+}
+#title-home{
+    position: absolute;
+    top: 6rem;
+}
+#row-home{
+    margin-top: 7.5rem;
+}
+/* END HOME */

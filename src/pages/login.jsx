@@ -1,10 +1,44 @@
 import Logo from '../assets/img/DumbMerch_Logo.png'
 import {Link} from 'react-router-dom'
+import {useState, useEffect} from 'react'
+import Home from './Home'
 import '../assets/css/style.css'
 
 export default function Login(){
+
+  const [data, setData] = useState({
+    isLogin:false,
+    user:{
+        email:'',
+        password:''
+    }
+  })
+
+  useEffect(() => {
+    console.log("Update succesful yeww!")
+
+  },[data])
+  console.log(data);
+  
+  const handleOnSubmit = (e) => {
+    e.preventDefault()
+    const email = document.querySelector('#forMail1').value
+    const password = document.querySelector('#forPassword1').value
+
+    setData({
+        isLogin: true,
+        user: { 
+            email,
+            password
+        }
+    })
+}
+
     return(
     <>
+      {data.isLogin ? <Home/> :
+      (
+        
       <div className="container">
         <div className="left-side">
           <img src={Logo} alt="logo-DumbMerch" />
@@ -24,7 +58,7 @@ export default function Login(){
     <div className="card" id="card">
       <p className="card-title">Login</p>
         <div className="card-body">
-          <form>
+          <form onSubmit={handleOnSubmit}>
             <div class="form-group">
               <input type="text" class="form-control" placeholder="Email" id="forMail1"/>
             </div>
@@ -38,6 +72,8 @@ export default function Login(){
       </div>
     </div>
   </div>
+      )}
+      
     </>
     )
 }

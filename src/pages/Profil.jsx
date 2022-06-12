@@ -1,4 +1,4 @@
-import NavbarHome from "../partials/NavabarUser"
+import NavbarHome from "../partials/NavbarUser"
 import SiBule from '../assets/img/Profil.png'
 import Mouse from '../assets/img/Mouse.png'
 import LogoDumbMerch from '../assets/img/DumbMerch_Logo.png'
@@ -6,26 +6,30 @@ import { useParams,useNavigate } from "react-router-dom"
 import { Button } from "react-bootstrap"
 
 const Profile = () =>{
-
+    // FOR NAVIGATE
     const forNavigate = useNavigate()
 
     const Navigate = () =>
      {
-        forNavigate('/edit-profile')
+        forNavigate('/edit-profile/0')
     }
 
+    // FOR GET ID
     const params = useParams()
 
-    console.log(params.id);
+    console.log('Id :' + params.id);
     return(
         <>
         <NavbarHome/>
+        
     <div className="container">
         <div className="row">
             <div className="col">
                 <h4 className="my-4" style={{color:'#F74D4D'}}>My Profile</h4>
                 <img src={SiBule} alt="profile-pict" />
             </div>
+
+
             <div className="col d-block" id="profile-left">
                 <div className="mb-4">
                     <p style={{color:'#F74D4D',fontSize:'18px'}}>Name</p>

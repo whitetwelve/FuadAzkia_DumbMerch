@@ -2,34 +2,30 @@ import Logo from '../assets/img/DumbMerch_Logo.png'
 import '../assets/css/style.css'
 import { Form,Button } from 'react-bootstrap'
 import { useState } from 'react'
-import { useNavigate,Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 
 export default function Register(){
 
-  const navigate = useNavigate()
 
-  const forNavigate = ()=>{
-    navigate('/login')
-  }
-
-  const [state,setState] = useState({
+  const [data,setData] = useState({
     fullname : '',
     email : '',
     password : ''
   })
 
   const forChangeInput = (e) =>{
-    setState({
-      ...state,
+    setData({
+      ...data,
       [e.target.name] : e.target.value
     })
   }
 
   const forSubmitInput = (e) =>{
     e.preventDefault()
-    console.log(state);
+    console.log(data);
   }
+  
     return(
   <>
     <div className="container">
@@ -55,15 +51,15 @@ export default function Register(){
               <div className="card-body">
                 <Form onSubmit={forSubmitInput}>
                   <div className="form-group">
-                    <input type="text" className="form-control" placeholder="Name" name='fullname' autocomplete="off" onChange={forChangeInput} value={state.fullname} id="forName"/>
+                    <input type="text" className="form-control" placeholder="Name" name='fullname' autocomplete="off" onChange={forChangeInput} value={data.fullname} id="forName"/>
                   </div>
 
                   <div className="form-group">
-                    <input type="text" className="form-control" placeholder="Email" name="email" autocomplete="off" onChange={forChangeInput} value={state.email} id="forMail"/>
+                    <input type="text" className="form-control" placeholder="Email" name="email" autocomplete="off" onChange={forChangeInput} value={data.email} id="forMail"/>
                   </div>
 
                   <div className="form-group">
-                    <input type="password" className="form-control" placeholder="Password" name="password" onChange={forChangeInput} value={state.password} id="forPassword"/>
+                    <input type="password" className="form-control" placeholder="Password" name="password" onChange={forChangeInput} value={data.password} id="forPassword"/>
                   </div>
 
                 <Button type="submit" className="btn btn-danger">Register</Button>

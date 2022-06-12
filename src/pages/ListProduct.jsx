@@ -19,6 +19,7 @@ export default function ListProducts(){
             <p style={{fontSize:'24px',
               color:'#FFFFFF'}}>List Product</p>
 
+
         <Table striped bordered hover variant="dark">
           <thead>
             <tr style={{fontFamily:'Roboto'}}>
@@ -32,6 +33,7 @@ export default function ListProducts(){
             </tr>
           </thead>
 
+
           <tbody className='body-table'>
             <tr className='row-table'>
               <td>1</td>
@@ -42,9 +44,12 @@ export default function ListProducts(){
               <td>600</td>
               <td>
 
+
               <Link style={{textDecoration:'none', color:'white'}} to='/edit-product'><Button variant="success" style={{width:'5rem'}}>Edit</Button></Link>
+              
               <Button variant="danger" className='ms-3' data-toggle="modal" data-target="#exampleModal" style={{fontFamily:'Avenir',marginRight:'-2rem'}}
               onClick={handleShow}>Delete</Button>
+
 
     <Modal show={show} onHide={handleClose}>
         <ModalBody style={{padding:'4.5rem 1.5rem'}}>
@@ -84,9 +89,11 @@ export default function ListProducts(){
         <td>600</td>
         <td>
 
+
           <Link style={{textDecoration:'none', color:'white'}} to='/edit-product'><Button variant="success" style={{width:'5rem'}}>Edit</Button></Link>
           <Button variant="danger" className='ms-3' data-toggle="modal" data-target="#exampleModal" style={{fontFamily:'Avenir',marginRight:'-2rem'}}
           onClick={handleShow}>Delete</Button>
+
 
         </td>
     </tr>
@@ -99,9 +106,11 @@ export default function ListProducts(){
       <td>600</td>
       <td>
 
+
         <Link style={{textDecoration:'none', color:'white'}} to='/edit-product'><Button variant="success" style={{width:'5rem'}}>Edit</Button></Link>
         <Button variant="danger" className='ms-3' data-toggle="modal" data-target="#exampleModal" style={{fontFamily:'Avenir',marginRight:'-2rem'}}
         onClick={handleShow}>Delete</Button>
+
 
       </td>
     </tr>
@@ -114,9 +123,11 @@ export default function ListProducts(){
       <td>600</td>
       <td>
 
+
         <Link style={{textDecoration:'none', color:'white'}} to='/edit-product'><Button variant="success" style={{width:'5rem'}}>Edit</Button></Link>
         <Button variant="danger" className='ms-3' data-toggle="modal" data-target="#exampleModal" style={{fontFamily:'Avenir',marginRight:'-2rem'}}
         onClick={handleShow}>Delete</Button>
+
 
       </td>
     </tr>
@@ -133,6 +144,7 @@ export default function ListProducts(){
         onClick={handleShow}>Delete</Button>
       </td>
     </tr>
+
 
     <tr className='row-table'>
       <td>6</td>

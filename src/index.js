@@ -35,7 +35,7 @@ root.render(
         <Route exact path='/about-Us' element={<AboutUs/>}/>
         <Route element={<PrivateRoute/>}>
             <Route exact path='/profile/:id' element={<Profile/>}/>
-            <Route exact path='/edit-profile' element={<EditProfile/>}/>
+            <Route exact path='/edit-profile/:id' element={<EditProfile/>}/>
         </Route>
       </Routes>
     </Router>

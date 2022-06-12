@@ -11,8 +11,8 @@ export default function NavbarHome(){
         <div className="nav-item d-block">
         <ul>
             <div className="row">
-                <div className="col">
-                    <NavLink to='/about-us' className="me-4" style={{textDecoration:'none',color :'white'}} >
+                <div cl assName="col">
+                    <NavLink to='/about-us'className="me-4" style={{textDecoration:'none',color :'white'}} >
                         About us
                     </NavLink>
 

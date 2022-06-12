@@ -1,7 +1,28 @@
 import NavbarAdmin from "../partials/NavbarAdmin";
 import siBule from "../assets/img/Profil.png"
+import { useState } from "react";
 
 export default function Complain(){
+
+    const [data,setData] = useState({
+        message:{
+            input:''
+        },
+        from:'Admin'
+    })
+
+    const handleOnSubmit = (e) => {
+        e.preventDefault()
+        const input = document.querySelector('#pleaseInput').value
+
+        setData({
+            message: input,
+            from : 'Admin'
+        })
+    }
+    console.log(data);
+
+    
     return(
     <>
         <NavbarAdmin></NavbarAdmin>
@@ -46,10 +67,10 @@ export default function Complain(){
                 <div className="triangle-left"></div>
             </div>
 
-                <form id="com5">
+                <form id="com5" onSubmit={handleOnSubmit}>
                     <div className="row mt-4 mb-5">
                         <div className="col mb-4">
-                            <input className="form-control" type="text" placeholder="Send Message"/>
+                            <input className="form-control" type="text" placeholder="Send Message" id="pleaseInput" autoComplete="off" style={{color:'white'}}/>
                         </div>
 
                         <div className="col mb-4">
